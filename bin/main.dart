@@ -7,10 +7,14 @@ main(List<String> arguments) {
   // types
   var a = 6/5;
   int b = (6/5).floor(); // everything is object
+  num b2 = 6/5; // decimal or integer
+  double b3 = 6/5;
+  bool b4 = true;
+  num b5 = 9999999999999999999999999999999999999999; // sky is the limit
   String c = "text";
   List<int> numbers = [1, 2, 3, 4, 5, 6]; // shortcut for list definition, GrowableList is used as the default implementation
   Map<int, int> map = {1: 1, 2: 2, 3: 3}; // LinkedHashMap as the default implementation
-  print("$a $b $c $numbers $map");
+  print("$a $b $b2 $b3 $b4 $c $numbers $map $b5");
   // operators
   int x = 6;
   x += 12;
