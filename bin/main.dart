@@ -18,6 +18,10 @@ class Point {
   Point(this.x, this.y); // maps directly to properties
 
   Point.from3D(this.x, this.y, z); // names constructor
+
+  Point operator +(Point p){
+    return new Point(x + p.x, y + p.y);
+  }
 }
 
 const CONSTANT = 10;
